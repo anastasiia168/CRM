@@ -24,8 +24,8 @@ namespace data.Mocks
                         AccessStatus = true
             },
              new Lead {
-                        IdLead = 1,
-                        FName = "ADAM",
+                        IdLead = 2,
+                        FName = "ADAM43",
                         SName = "BOJIY",
                         DateBirthday = "12",
                         DateRegistration = "12",
@@ -40,7 +40,7 @@ namespace data.Mocks
 
 
 
-        public IEnumerable<Lead> Objects
+        private IEnumerable<Lead> Objects
         {
             get
             {
@@ -90,6 +90,7 @@ namespace data.Mocks
             return null;
         }
 
+       
         public void UpdateObject(int id, Lead p)
         {
             foreach (var item in _leads)

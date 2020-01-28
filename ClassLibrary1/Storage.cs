@@ -15,5 +15,11 @@ namespace busines
             translator.ShowAll();
             return new List<IDataBase>();
         }
+        public Lead ShowObjectById(int id)
+        {  
+            Lead lead = translator.ShowObjectById(id);
+
+            return lead;
+        }
     }
 }

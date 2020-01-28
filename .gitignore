@@ -31,3 +31,7 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 *.dll
+/.vs/Api/v16/Server/sqlite3/storage.ide-wal
+/.vs/Api/v16/Server/sqlite3/storage.ide-wal
+/.vs/Api/v16/Server/sqlite3/storage.ide
+/.vs/Api/config/applicationhost.config

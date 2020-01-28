@@ -9,12 +9,19 @@ namespace busines
 {
     public class Translator_data
     {
-        private readonly IMocks<Lead> _lead;
+        private readonly IMocks<Lead> _lead = new LeadMock();
         public IEnumerable<IDataBase> ShowAll()
         {
 
-            IEnumerable<Lead> leads = _lead.Objects;
+            IEnumerable<Lead> leads = _lead.GetAllObjects();
             return leads;
+        }
+      
+        public Lead ShowObjectById(int id)
+        {
+
+            Lead lead = _lead.GetObjectById(id);
+            return lead;
         }
     }
 }
