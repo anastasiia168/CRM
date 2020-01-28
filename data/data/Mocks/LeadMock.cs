@@ -8,7 +8,7 @@ namespace data.Mocks
 {
     public class LeadMock : IMocks<Lead>
     {
-        private static List<Lead> _leads = new List<Lead>
+        private static readonly List<Lead> _leads = new List<Lead>
         {
             new Lead {
                         IdLead = 1,

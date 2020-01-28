@@ -9,8 +9,8 @@ namespace busines
 {
     public class Translator_api
     {
-        string json;
-        Storage storage = new Storage();
+        private readonly string json;
+        readonly Storage storage = new Storage();
         public string ShowAll()
         {
 

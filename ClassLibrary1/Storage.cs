@@ -7,7 +7,7 @@ namespace busines
 {
     public class Storage
     {
-        Translator_data translator = new Translator_data();
+        readonly Translator_data translator = new Translator_data();
         public IEnumerable<IDataBase> ShowAll()
         {
 
