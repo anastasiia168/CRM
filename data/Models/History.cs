@@ -1,7 +1,7 @@
-﻿using data.Models;
+﻿
 using System;
 
-namespace Api.data
+namespace data.Models
 {
     public class History : IDataBase
     {
@@ -10,11 +10,11 @@ namespace Api.data
        
        
 
-        public History(int _idLead, string _historyText)
-        {
-            IdLead = _idLead;
-            HistoryText = _historyText;
-        }
+        //public History(int _idLead, string _historyText)
+        //{
+        //    IdLead = _idLead;
+        //    HistoryText = _historyText;
+        //}
 
 
     }

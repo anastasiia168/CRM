@@ -11,7 +11,7 @@ namespace data.CRUD
 
         public List<IDataBase> Execute()
         {
-           
+            return new List<IDataBase> { new Course(), new Lead() };
         }
 
         public void Create(Dictionary<string, string> data)

@@ -1,7 +1,7 @@
-﻿using data.Models;
+﻿
 using System;
 
-namespace Api.data
+namespace data.Models
 {
     public class Lead : IDataBase
     {
@@ -18,32 +18,32 @@ namespace Api.data
         public bool  AccessStatus{ get; set; }
 
 
-        public Lead(
-            int _id,
-            string _name,
-            string _sname,
-            string _dateBirthday, 
-            string _dateRegistration,
-            int _numder,
-            string _eMail,
-            int _idCourse,
-            string _groupeName,
-            int _idStatus,
-            bool _accessStatus
-            )
-        {
-            IdLead = _id;
-            FName = _name;
-            SName = _sname;
-            DateBirthday = _dateBirthday;
-            DateRegistration = _dateRegistration;
-            Numder = _numder;
-            EMail = _eMail;
-            IdCourse = _idCourse;
-            GroupeName = _groupeName;
-            IdStatus = _idStatus;
-            AccessStatus = _accessStatus;
-        }
+        //public Lead(
+        //    int _id,
+        //    string _name,
+        //    string _sname,
+        //    string _dateBirthday, 
+        //    string _dateRegistration,
+        //    int _numder,
+        //    string _eMail,
+        //    int _idCourse,
+        //    string _groupeName,
+        //    int _idStatus,
+        //    bool _accessStatus
+        //    )
+        //{
+        //    IdLead = _id;
+        //    FName = _name;
+        //    SName = _sname;
+        //    DateBirthday = _dateBirthday;
+        //    DateRegistration = _dateRegistration;
+        //    Numder = _numder;
+        //    EMail = _eMail;
+        //    IdCourse = _idCourse;
+        //    GroupeName = _groupeName;
+        //    IdStatus = _idStatus;
+        //    AccessStatus = _accessStatus;
+        //}
 
 
     }

@@ -1,7 +1,7 @@
-﻿using data.Models;
+﻿
 using System;
 
-namespace Api.data
+namespace data.Models
 {
     public class Skills : IDataBase
     {
@@ -10,11 +10,11 @@ namespace Api.data
        
        
 
-        public Skills(int _idSkills, string _nameSkills)
-        {
-            IdSkills = _idSkills;
-            NameSkills = _nameSkills;
-        }
+        //public Skills(int _idSkills, string _nameSkills)
+        //{
+        //    IdSkills = _idSkills;
+        //    NameSkills = _nameSkills;
+        //}
 
 
     }

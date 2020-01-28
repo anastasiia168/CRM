@@ -1,7 +1,7 @@
 ﻿using System;
-using data.Models;
 
-namespace Api.data
+
+namespace data.Models
 {
     public class Teachers : IDataBase
     {
@@ -11,12 +11,12 @@ namespace Api.data
        
        
 
-        public Teachers(int _idTeachers, string _fName, string _sName )
-        {
-            IdTeachers = _idTeachers;
-            FName = _fName;
-            SName = _sName;
-        }
+        //public Teachers(int _idTeachers, string _fName, string _sName )
+        //{
+        //    IdTeachers = _idTeachers;
+        //    FName = _fName;
+        //    SName = _sName;
+        //}
 
 
     }

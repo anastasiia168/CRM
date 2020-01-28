@@ -1,6 +1,6 @@
 using System;
 
-namespace Api.WebApplication4
+namespace WebTest
 {
     public class WeatherForecast
     {

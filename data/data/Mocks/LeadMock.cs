@@ -1,45 +1,46 @@
-﻿using Api.data;
+﻿using data.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace busines.data.Mocks
+namespace data.Mocks
 {
-    class LeadMock : IMocks
+    public class LeadMock : IMocks<Lead>
     {
         private static List<Lead> _leads = new List<Lead>
         {
-            new Lead (
-                        1,
-                        "ADAM",
-                        "BOJIY",
-                        "12",
-                        "12",
-                        5000,
-                        "c@a",
-                        1,
-                        "c1",
-                        5000,
-                        true
-                    ),
-              new Lead (
-                        1,
-                        "ADAM",
-                        "BOJIY",
-                        "12",
-                        "12",
-                        5000,
-                        "c@a",
-                        1,
-                        "c1",
-                        5000,
-                        true
-                    )
+            new Lead {
+                        IdLead = 1,
+                        FName = "ADAM",
+                        SName = "BOJIY",
+                        DateBirthday = "12",
+                        DateRegistration = "12",
+                        Numder = 5000,
+                        EMail = "c@a",
+                        IdCourse = 1,
+                        GroupeName = "c1",
+                        IdStatus = 5000,
+                        AccessStatus = true
+            },
+             new Lead {
+                        IdLead = 1,
+                        FName = "ADAM",
+                        SName = "BOJIY",
+                        DateBirthday = "12",
+                        DateRegistration = "12",
+                        Numder = 5000,
+                        EMail = "c@a",
+                        IdCourse = 1,
+                        GroupeName = "c1",
+                        IdStatus = 5000,
+                        AccessStatus = true
+            },
         };
 
 
 
-        public IEnumerable<Lead> Leads
+        public IEnumerable<Lead> Objects
         {
             get
             {
@@ -47,12 +48,12 @@ namespace busines.data.Mocks
             }
         }
 
-        public void AddLead(Lead p)
+        public void AddObject(Lead p)
         {
             _leads.Add(p);
         }
 
-        public IEnumerable<Lead> DeleteLead(int id)
+        public IEnumerable<Lead> DeleteObject(int id)
         {
 
             Lead p = null;
@@ -71,12 +72,12 @@ namespace busines.data.Mocks
             return _leads;
         }
 
-        public IEnumerable<Lead> GetAllLeads()
+        public IEnumerable<Lead> GetAllObjects()
         {
             return _leads;
         }
 
-        public Lead GetLeadById(int id)
+        public Lead GetObjectById(int id)
         {
             foreach (var item in _leads)
             {
@@ -89,7 +90,7 @@ namespace busines.data.Mocks
             return null;
         }
 
-        public void UpdateLead(int id, Lead p)
+        public void UpdateObject(int id, Lead p)
         {
             foreach (var item in _leads)
             {

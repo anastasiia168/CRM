@@ -4,7 +4,7 @@ using System.Text;
 
 namespace data.Models
 {
-    interface IDataBase
+    public interface IDataBase
     {
     }
 }

@@ -1,7 +1,7 @@
-﻿using data.Models;
+﻿
 using System;
 
-namespace Api.data
+namespace data.Models
 {
     public class HR : IDataBase
     {
@@ -9,12 +9,12 @@ namespace Api.data
         public string FName { get; set; }
         public string SName { get; set; }
 
-        public HR(int _idHR, string _fName, string _sName )
-        {
-            IdHR = _idHR;
-            FName = _fName;
-            SName = _sName;
-        }
+        //public HR(int _idHR, string _fName, string _sName )
+        //{
+        //    IdHR = _idHR;
+        //    FName = _fName;
+        //    SName = _sName;
+        //}
 
 
     }
