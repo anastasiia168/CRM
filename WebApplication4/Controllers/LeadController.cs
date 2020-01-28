@@ -42,7 +42,7 @@ namespace WebTest.Controllers
         public string Post([FromBody] object value)
         {
             Lead newLead = translator.ObjectToLead(value);
-            newLead.IdStatus = _leads.Count;
+            newLead.IdStatus = _leads.Count + 1;
             newLead.AccessStatus = true;
 
             _leads.AddObject(newLead);
