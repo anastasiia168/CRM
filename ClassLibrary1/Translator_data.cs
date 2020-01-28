@@ -1,4 +1,4 @@
-﻿using data.Mocks;
+﻿using data;
 using data.Models;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ namespace busines
 {
     public class Translator_data
     {
-        private readonly IMocks<Lead> _lead;
+        private readonly IObject<Lead> _lead;
         public IEnumerable<IDataBase> ShowAll()
         {
 

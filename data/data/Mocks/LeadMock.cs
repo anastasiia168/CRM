@@ -1,12 +1,9 @@
 ﻿using data.Models;
-
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace data.Mocks
 {
-    public class LeadMock : IMocks<Lead>
+    public class LeadMock : IObject<Lead>
     {
         private static List<Lead> _leads = new List<Lead>
         {
@@ -47,6 +44,8 @@ namespace data.Mocks
                 return _leads;
             }
         }
+
+        public int Count => _leads.Count;
 
         public void AddObject(Lead p)
         {
