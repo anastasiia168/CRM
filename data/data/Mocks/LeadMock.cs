@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace data.Mocks
 {
     public class LeadMock : IMocks<Lead>
@@ -24,7 +25,7 @@ namespace data.Mocks
                         AccessStatus = true
             },
              new Lead {
-                        IdLead = 1,
+                        IdLead = 2,
                         FName = "ADAM",
                         SName = "BOJIY",
                         DateBirthday = "12",

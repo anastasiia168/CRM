@@ -11,12 +11,7 @@ namespace data.Models
        
        
 
-        //public Teachers(int _idTeachers, string _fName, string _sName )
-        //{
-        //    IdTeachers = _idTeachers;
-        //    FName = _fName;
-        //    SName = _sName;
-        //}
+        
 
 
     }

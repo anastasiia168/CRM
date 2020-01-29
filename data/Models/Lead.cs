@@ -16,7 +16,7 @@ namespace data.Models
         public string  GroupeName{ get; set; }
         public int  IdStatus{ get; set; }
         public bool  AccessStatus{ get; set; }
-
+        
 
         //public Lead(
         //    int _id,

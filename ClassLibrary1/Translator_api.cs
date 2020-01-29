@@ -14,8 +14,14 @@ namespace busines
         public string ShowAll()
         {
 
-            //json = JsonSerializer.Serialize<List<Person>>(ds.GetSQL(command, 0, null, null));
+           
             storage.ShowAll();
+            return json;
+        }
+
+        public string Update(int id, Dictionary<string, string> dict)
+        {
+            storage.Update(id, dict);
             return json;
         }
     }
