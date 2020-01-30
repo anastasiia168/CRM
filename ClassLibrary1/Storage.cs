@@ -21,5 +21,10 @@ namespace busines
 
             return lead;
         }
+
+        public IEnumerable<IDataBase> Delete(int id)
+        {
+            return translator.Delete(id);
+        }
     }
 }

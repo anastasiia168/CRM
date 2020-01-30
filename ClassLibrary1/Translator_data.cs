@@ -23,5 +23,11 @@ namespace busines
             Lead lead = _lead.GetObjectById(id);
             return lead;
         }
+
+        public IEnumerable<IDataBase> Delete(int id)
+        {
+            IEnumerable<Lead> leads = _lead.DeleteObject(id);
+            return leads;
+        }
     }
 }

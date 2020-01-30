@@ -28,5 +28,11 @@ namespace busines
 
             return jasonLead;
         }
+
+        public string Delete(int id)
+        {
+            storage.Delete(id);
+            return json;
+        }
     }
 }

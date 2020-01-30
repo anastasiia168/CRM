@@ -20,6 +20,13 @@ namespace WebTest
         {
             return t.ShowObjectById(id);
         }
+        
+        [HttpDelete]
+        [Route("/{id}")]
+        public string Delete(int id)
+        {
+            return t.Delete(id);
+        }
     }
 }
 
